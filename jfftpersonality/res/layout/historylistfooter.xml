@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+	<LinearLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_alignParentTop="true"
+	android:layout_marginTop="105dip"  
+	android:layout_marginBottom="5dip"
+	android:layout_above="@+id/footerlayout"
+	android:id="@+id/listviewlayout">
+
+		<TextView
+		android:id="@+id/reportText"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_gravity="top"
+		android:layout_weight="1"
+		android:text="text"
+		android:textAppearance="?android:attr/textAppearanceSmall" />
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/footerlayout"
+	android:layout_marginBottom="5dip"
+	android:layout_height="45dip"
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent"
+	android:layout_alignParentBottom="true"
+	android:gravity="center">
+		<Button
+		android:id="@+id/bHistory" 
+		android:text="@string/history" 
+		android:layout_width="0dip"
+		android:layout_height="45dip"
+		android:layout_weight="1">
+		</Button>
+		<Button
+		android:id="@+id/bList" 
+		android:text="@string/list"
+		android:layout_width="0dip"
+		android:layout_height="45dip"
+		android:layout_weight="1">
+		</Button>
+	</LinearLayout>
+</RelativeLayout>

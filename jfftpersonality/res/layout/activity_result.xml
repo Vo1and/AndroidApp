@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true" 
+android:background="@drawable/bkgreg"
+android:orientation="vertical"
+tools:context=".ResultActivity" >
+
+	<LinearLayout
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+			<TextView
+			android:id="@+id/textResult"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="20dp"
+			android:text="@string/large_text"
+			android:textColor="#064C93"
+			android:textStyle="bold"
+			android:textAppearance="?android:attr/textAppearanceLarge" />
+
+			<TextView
+			android:id="@+id/reportText"
+			android:layout_width="match_parent"
+			android:layout_height="0dip"
+			android:layout_gravity="top"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="10dp"
+			android:layout_weight="1"
+			android:text="@string/small_text"
+			android:textAppearance="?android:attr/textAppearanceSmall" />
+
+			<LinearLayout android:id="@+id/footerlayout"
+				android:layout_marginBottom="5dip"
+				android:layout_height="45dip"
+				android:orientation="horizontal" 
+				android:layout_width="fill_parent"
+				android:gravity="center">
+				<Button
+					android:id="@+id/bHistory" 
+					android:layout_width="0dip"
+					android:layout_height="40dip"
+					android:layout_marginLeft="3dp"
+					android:layout_marginRight="3dp"
+					android:layout_marginBottom="3dp"
+					android:layout_weight="1"
+					android:background="@drawable/regbutton"
+					android:text="@string/history" 
+					android:textColor="#FFFFFF"
+					android:textStyle="bold|italic">
+				</Button>
+				<Button
+					android:id="@+id/bList" 
+					android:layout_width="0dip"
+					android:layout_height="40dip"
+					android:layout_marginLeft="3dp"
+					android:layout_marginRight="3dp"
+					android:layout_marginBottom="3dp"
+					android:layout_weight="1"
+					android:background="@drawable/regbutton"
+					android:text="@string/list"
+					android:textColor="#FFFFFF"
+					android:textStyle="bold|italic">
+				</Button>
+			</LinearLayout>
+
+	</LinearLayout>
+</ScrollView>
